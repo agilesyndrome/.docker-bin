@@ -1,0 +1,3 @@
+cat DOCKER_TOOLS | awk '{split($0,a,"@"); print "ln -fs @ " a[1]}' > ./create-symlinks
+chmod +x ./create-symlinks
+./create-symlinks
