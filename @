@@ -24,6 +24,5 @@ fi
 docker run \
     -v ${PWD}:/app \
     ${DOCKER_CONTAINER_OPTS} \
-    -p ${DEV_PORT_LOCAL}:${DEV_PORT} \
     -it ${TOOL_CONTAINER} \
     ${INTERNAL_TOOL_NAME} ${@}
