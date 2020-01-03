@@ -1,4 +1,6 @@
+aws@agilesyndrome/awscli:${AWSCLI_VERSION}@--env-file ~/.docker-bin/env-aws
 bash_node@agilesyndrome/nodejs:${NODE_VERSION}
+bash_python@agilesyndrome/python:${PYTHON_VERSION}
 bash_ruby@agilesyndrome/ruby:${RUBY_VERSION}
 bundle@agilesyndrome/ruby:${RUBY_VERSION}
 bundler@agilesyndrome/ruby:${RUBY_VERSION}
@@ -8,6 +10,8 @@ irb@agilesyndrome/ruby:${RUBY_VERSION}
 node@agilesyndrome/nodejs:${NODE_VERSION}
 npm@agilesyndrome/nodejs:${NODE_VERSION}
 npx@agilesyndrome/nodejs:${NODE_VERSION}
+pip@agilesyndrome/python:${PYTHON_VERSION}
+python@agilesyndrome/python:${PYTHON_VERSION}
 racc2y@agilesyndrome/ruby:${RUBY_VERSION}
 racc@agilesyndrome/ruby:${RUBY_VERSION}
 rake@agilesyndrome/ruby:${RUBY_VERSION}
