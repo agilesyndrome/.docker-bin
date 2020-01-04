@@ -1,5 +1,5 @@
-aws@agilesyndrome/awscli:${AWSCLI_VERSION}@--env-file ~/.docker-bin/env-aws
-bash_node@agilesyndrome/nodejs:${NODE_VERSION}
+aws@agilesyndrome/awscli:${AWSCLI_VERSION}
+bash_node@agilesyndrome/nodejs:${NODE_VERSION}@-p 3000:3000
 bash_python@agilesyndrome/python:${PYTHON_VERSION}
 bash_ruby@agilesyndrome/ruby:${RUBY_VERSION}
 bundle@agilesyndrome/ruby:${RUBY_VERSION}

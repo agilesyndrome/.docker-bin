@@ -1,12 +1,20 @@
+CONFIG_DIR=/Users/drew/.docker-bin
 TOOL_NAME=$(echo ${0} | sed 's:/Users/drew/.docker-bin/::')
 
 TOOL_TIP=$( \
-  grep "^${TOOL_NAME}" ~/.docker-bin/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[2]}')
+  grep "^${TOOL_NAME}" ${CONFIG_DIR}/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[2]}')
 
-DOCKER_CONTAINEROPTTIPS=$(grep "^${TOOL_NAME}" ~/.docker-bin/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[3]}')
+DOCKER_CONTAINEROPTTIPS=$(grep "^${TOOL_NAME}" ${CONFIG_DIR}/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[3]}')
 
 TOOL_CONTAINER=$(eval echo ${TOOL_TIP})
 DOCKER_CONTAINER_OPTS=$(eval echo ${DOCKER_CONTAINEROPTTIPS})
+
+if [ -f ${CONFIG_DIR}/env-${TOOL_NAME} ]; then
+  USE_ENVFILE="--env-file ${CONFIG_DIR}/env-${TOOL_NAME}"
+else
+  USE_ENVFILE=""
+fi
+
 
 INTERNAL_TOOL_NAME=$(echo ${TOOL_NAME} | awk '{split($0,a,"_"); print a[1]}')
 TOOL_CONTAINER=$(eval echo ${TOOL_TIP})
@@ -23,6 +31,7 @@ fi
 
 docker run \
     -v ${PWD}:/app \
+    ${USE_ENVFILE} \
     ${DOCKER_CONTAINER_OPTS} \
     -it ${TOOL_CONTAINER} \
     ${INTERNAL_TOOL_NAME} ${@}
