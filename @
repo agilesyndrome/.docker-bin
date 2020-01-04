@@ -1,4 +1,7 @@
 CONFIG_DIR=/Users/drew/.docker-bin
+
+. ${CONFIG_DIR}/env-global
+
 TOOL_NAME=$(echo ${0} | sed 's:/Users/drew/.docker-bin/::')
 
 TOOL_TIP=$( \

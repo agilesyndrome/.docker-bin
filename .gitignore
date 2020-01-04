@@ -4,3 +4,4 @@
 !DOCKER_TOOLS
 !.gitignore
 !README.md
+!env-*
