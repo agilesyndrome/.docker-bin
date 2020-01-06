@@ -1,4 +1,5 @@
 aws@agilesyndrome/awscli:${AWSCLI_VERSION}
+aws2@agilesyndrome/aws2cli:2.0.0dev
 bash_node@agilesyndrome/nodejs:${NODE_VERSION}@-p 3000:3000
 bash_python@agilesyndrome/python:${PYTHON_VERSION}
 bash_ruby@agilesyndrome/ruby:${RUBY_VERSION}

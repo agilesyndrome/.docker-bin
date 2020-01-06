@@ -5,7 +5,7 @@ CONFIG_DIR=/Users/drew/.docker-bin
 TOOL_NAME=$(echo ${0} | sed 's:/Users/drew/.docker-bin/::')
 
 TOOL_TIP=$( \
-  grep "^${TOOL_NAME}" ${CONFIG_DIR}/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[2]}')
+  grep "^${TOOL_NAME}\@" ${CONFIG_DIR}/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[2]}')
 
 DOCKER_CONTAINEROPTTIPS=$(grep "^${TOOL_NAME}" ${CONFIG_DIR}/DOCKER_TOOLS | awk '{split($0,a,"@"); print a[3]}')
 
