@@ -1,5 +1,5 @@
-aws@${DOCKER_TOOLBASE}/syndromeos-python/awscli:${AWSCLI_VERSION}
-aws2@${DOCKER_TOOLBASE}/syndromeos-python/aws2cli:2.0.0dev
+aws@${DOCKER_TOOLBASE}/syndromeos-pythonapps/awscli:${AWSCLI_VERSION}
+aws2@${DOCKER_TOOLBASE}/syndromeos-pythonapps/aws2cli:2.0.0dev
 bash_base@${DOCKER_TOOLBASE}/syndromeos-base/syndromeos:latest
 bash_node@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}@-p 3000:3000
 bash_python@${DOCKER_TOOLBASE}/syndromeos-python/python:${PYTHON_VERSION}
@@ -9,6 +9,7 @@ bundler@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 erb@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 gem@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 irb@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
+jupyter@${DOCKER_TOOLBASE}/syndromeos-pythonapps/jupyter:${JUPYTER_VERSION}
 node@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
 npm@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
 npx@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
