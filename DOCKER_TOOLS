@@ -9,7 +9,7 @@ bundler@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 erb@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 gem@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
 irb@${DOCKER_TOOLBASE}/syndromeos-ruby/ruby:${RUBY_VERSION}
-jupyter@${DOCKER_TOOLBASE}/syndromeos-pythonapps/pytool-jupyter:${JUPYTER_VERSION}
+jupyter@${DOCKER_TOOLBASE}/syndromeos-pythonapps/pytool-jupyterlab:${JUPYTER_VERSION}
 node@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
 npm@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
 npx@${DOCKER_TOOLBASE}/syndromeos-nodejs/node:${NODE_VERSION}
