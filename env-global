@@ -3,4 +3,5 @@ export DEFAULT_AWSCLI_VERSION=1.16.310
 export DEFAULT_NODE_VERSION=12.13.1
 export DEFAULT_RUBY_VERSION=2.7.0
 export DEFAULT_PYTHON_VERSION=3.8.1
-export DOCKER_TOOLBASE=docker.pkg.github.com/agilesyndrome
+export DOCKERBIN_TOOLBASE=docker.pkg.github.com/agilesyndrome
+export DOCKERBIN_SYMLINK=~/.docker-bin
